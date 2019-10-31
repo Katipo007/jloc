@@ -1,0 +1,8 @@
+*.yy linguist-vendored
+
+# These files are text and should be normalized
+*.txt text
+*.ini text
+*.gml text
+*.json text
+*.yy text
