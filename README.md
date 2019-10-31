@@ -49,6 +49,8 @@ Eg: A localisation value of "Hello, %1!", when called with `jloc_translate_ext("
 
 # FAQ
 
+- Have I seen this before?
+    - This is a ported version of [the old version](https://github.com/Katipo007/oloc) to [Catalyst](https://github.com/GameMakerHub/Catalyst)
 - What if a value is not found for a localisation lookup?
     - The lookup string will be returned. Eg: `jloc_translate("invalid.lookup")` will return "invalidLookup".
 - Supported platforms
