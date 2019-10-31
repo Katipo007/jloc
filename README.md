@@ -3,20 +3,20 @@
 
 ![License](https://img.shields.io/github/license/katipo007/jloc)
 
-# Usage
-
-1. Import extension to your project.
-2. Add localisation `.json` files to your project as "Included Files" (eg: `localisation/english.json`)
-3. (optional) If you wish to store your localisation files somewhere other than `/localisation/` call `jloc_set_directory()` with the desired path, calling with -1 will reset to `/localisation/`.
-4. Call `jloc_load()` with the desired language, eg: `jloc_load("english")`
-5. You are now avaliable to call `jloc_translate_*` functions
-
 # Installation
 Using [Catalyst](https://github.com/GameMakerHub/Catalyst), the open-source package manager for GameMaker Studio 2:
 
 ```
 catalyst require katipo007/jloc
 ```
+
+# Usage
+
+1. Add localisation `.json` files to your project as "Included Files" (eg: `localisation/english.json`)
+2. Call `jloc_initialise()` before using any other `jloc_*` functions
+3. (optional) If you wish to store your localisation files somewhere other than `/localisation/` call `jloc_set_directory()` with the desired path.
+4. Call `jloc_load()` with the desired language, eg: `jloc_load("english")`
+5. You are now able to use the `jloc_translate_*` functions
 
 # Localisation File Format
 Localisation files are defined in the JSON format, and the filenames use the `.json` extension.
